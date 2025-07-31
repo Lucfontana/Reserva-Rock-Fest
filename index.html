@@ -6,14 +6,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Reserva Rock Fest</title>
 </head>
+
+    <header>
+        <nav>
+            <h1>Rock Fest</h1>
+            <ul>
+                <li>Inicio</li>
+                <li>Entradas</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
 <body>
     <!-- TODO: SACAR LOS BR Y PONERLOS EN EL CSS -->
+     <div class="flex">
     <form id="formulario">
         <label for="nombre">Nombre <br>
-            <input type="text" minlength="1" id="nombre">
+            <input type="text" minlength="1" id="nombre" class="inputcolor">
         </label> <br>
         <label for="entradas"> Cantidad de entradas <br>
-            <input type="number" name="" id="numero-entradas">
+            <input type="number" name="" id="numero-entradas" class="inputcolor">
         </label><br>
         <label for="tipoEntrada">Tipo de entrada <br>
             <select name="tipoEntrada" id="tipo-entrada" required>
@@ -23,16 +35,16 @@
             </select>
         </label><br>
         <label for="codigoDescuento">Código de Descuento <br>
-            <input type="text" id="codigo-descuento" >
+            <input type="text" id="codigo-descuento" class="inputcolor">
         </label>
         <br>
-        <input type="submit" id="enviar" value="Enviar">
-        <input type="reset" id="reset" value="Reiniciar">
+        <input type="submit" id="enviar" value="Enviar" class="enviar">
 
         <div id="error"></div>
         <div id="confirmacion"></div>
         <div id="mensaje"></div>
     </form>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -2,20 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: arial;
+}
+
+/* Estilos del nabvar */
+
+nav {
+    background-color: black;
+    margin: 0 0 30px;
+    border-bottom: solid yellow 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav h1 {
+    color: yellow;
+    transition: all ease .5s;
+    font-size: 30px;
+}
+
+nav h1:hover{
+    font-size: 32px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    color: white;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0 10px 0;
+    font-size: 18px;
+    transition: all ease .5s;
+}
+
+nav ul li:hover{
+    font-size: 22px;
+    cursor: pointer;
+    transition: all ease .5s;
 }
 
 body {
     background-image: url(mosaico.jfif);
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
+
 #error, #confirmacion, #mensaje {
-    max-width: 400px;
     margin: 10px 0;
     border-radius: 10px;
+    max-width: 170px;
 }
 
 #error {
@@ -31,14 +73,19 @@ body {
     background-color: blue;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
 #formulario {
     background-color: black;
     color: white;
     padding: 30px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 300px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.597);
+
 }
 
 #formulario input, #formulario section {
@@ -46,7 +93,22 @@ body {
     margin: 10px 0;
     padding: 5px;
     border-radius: 10px;
+}
+
+.inputcolor {
     background-color: gray;
 }
+
+.enviar {
+    width: 170px;
+    background-color: yellow;
+}
+
+@media (width<600px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
 
 
