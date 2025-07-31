@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva Rock Fest</title>
+</head>
+<body>
+    <!-- TODO: SACAR LOS BR Y PONERLOS EN EL CSS -->
+    <form id="formulario">
+        <label for="nombre">Nombre <br>
+            <input type="text" minlength="1" id="nombre">
+        </label> <br>
+        <label for="entradas"> Cantidad de entradas <br>
+            <input type="number" name="" id="numero-entradas">
+        </label><br>
+        <label for="tipoEntrada">Tipo de entrada <br>
+            <select name="tipoEntrada" id="tipo-entrada" required>
+                <option value="General">General $1000</option>
+                <option value="VIP">VIP $2000</option>
+                <option value="Platino">Platino $3000</option>
+            </select>
+        </label><br>
+        <label for="codigoDescuento">Código de Descuento <br>
+            <input type="text" id="codigo-descuento" >
+        </label>
+        <br>
+        <input type="submit" id="enviar" value="Enviar">
+        <input type="reset" id="reset" value="Reiniciar">
+
+        <div id="error"></div>
+        <div id="confirmacion"></div>
+        <div id="mensaje"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
